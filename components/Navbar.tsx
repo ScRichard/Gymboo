@@ -65,8 +65,8 @@ export default function Navbar() {
         {/* Mobile Menu Links */}
         <div className="flex flex-col gap-4 px-6 py-4">
           {navLinks.map((link) => (
-            <a key={link.label} href={link.href} className="text-white hover:text-[#FEBA53] transition-all w-full h-12 flex items-center justify-center">
-              <span className="group relative">
+            <a key={link.label} href={link.href} className="group text-white hover:text-[#FEBA53] transition-all w-full h-12 flex items-center justify-center">
+              <span className="relative">
                 {link.label}
                 <div className="absolute bottom-0 left-0 right-0 h-0.5 w-full bg-white transform transition-all scale-x-0 group-hover:bg-[#FEBA53] group-hover:scale-x-100"></div>
               </span>
