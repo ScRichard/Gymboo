@@ -1,9 +1,13 @@
-
+import Hero from "@/components/pages/Hero";
+import HowItWorks from "@/components/pages/HowItWorks";
+import Equipment from '@/components/pages/Equipment';
 
 export default function Home() {
   return (
-    <div className="max-w-4xl mx-auto px-6 py-12">
-      
-    </div>
+    <>
+      <Hero />
+      <HowItWorks />
+      <Equipment />
+    </>
   );
 }
