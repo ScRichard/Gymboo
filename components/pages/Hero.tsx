@@ -6,8 +6,9 @@ export default function Hero() {
   return (
     <section className="min-h-screen px-10 py-12 md:py-0 relative">
         <div className="-z-10">
-        <Image src={`${prefix}/background.png`} alt="Hero Image" width={600} height={400}
-         className="absolute object-cover grayscale min-h-screen w-auto right-0 top-0 opacity-10 md:opacity-50 -z-6" priority />
+        <Image src={`${prefix}/background.png`} alt="Hero Image"
+         width={1920} height={1080}
+         className="absolute object-cover object-right right-0 top-0 bottom-0 h-full w-full md:w-auto grayscale opacity-10 md:opacity-50 -z-6" priority />
          <div className="absolute inset-0 bg-gradient-to-b from-transparent to-stone-950 pointer-events-none -z-5" />
         </div>
 
