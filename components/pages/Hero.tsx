@@ -1,13 +1,6 @@
 import Image from 'next/image';
 import { ArrowDown } from 'lucide-react';
 
-type HeroProps = {
-  title?: string;
-  subtitle?: string;
-  ctaText?: string;
-  imageUrl?: string;
-};
-
 export default function Hero() {
   return (
     <section className="min-h-screen px-10 py-12 md:py-0 relative">
