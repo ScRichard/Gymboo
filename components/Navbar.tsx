@@ -1,6 +1,7 @@
 'use client';
 
 import Image from 'next/image';
+const prefix = typeof window !== 'undefined' && window.location.pathname.startsWith('/Gymboo') ? '/Gymboo' : '';
 import { useState, useEffect } from 'react';
 import { Menu, X } from 'lucide-react';
 import NavbarLinkButton from './NavbarLinkButton';
@@ -52,7 +53,7 @@ export default function Navbar() {
     <nav className={`fixed top-0 left-0 right-0 w-full z-40 flex items-center justify-between px-6 lg:px-10 py-7 transform transition-all duration-300 ease-in-out ${hasScrolled ? 'glass-dark' : 'bg-transparent'}`}>
       {/* Left: Logo */}
       <div className="h-8 flex items-center">
-        <Image src="/logo_white.png" alt="Gymboo Logo" width={180} height={50} priority/>
+        <Image src={`${prefix}/logo_white.png`} alt="Gymboo Logo" width={180} height={50} priority/>
       </div>
 
       {/* Center: Navigation Links */}
@@ -83,7 +84,7 @@ export default function Navbar() {
         {/* Mobile Menu Header: Logo and Close Button */}
         <div className="flex items-center justify-between px-6 py-4 border-b border-white/10">
           <div className="h-8 flex items-center">
-            <Image src="/logo_white.png" alt="Gymboo Logo" width={120} height={50} priority/>
+            <Image src={`${prefix}/logo_white.png`} alt="Gymboo Logo" width={120} height={50} priority/>
           </div>
           <button
             className="p-2 text-white"

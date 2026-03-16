@@ -1,6 +1,7 @@
 'use client';
 
 import Image from 'next/image';
+const prefix = typeof window !== 'undefined' && window.location.pathname.startsWith('/Gymboo') ? '/Gymboo' : '';
 import { Mail, Phone, MapPin } from 'lucide-react';
 
 export default function Footer() {
@@ -21,7 +22,7 @@ export default function Footer() {
           {/* Logo and About */}
           <div className="md:col-span-1">
             <div className="h-8 flex items-center mb-6">
-              <Image src="/logo_white.png" alt="Gymboo Logo" width={140} height={40} />
+              <Image src={`${prefix}/logo_white.png`} alt="Gymboo Logo" width={140} height={40} />
             </div>
             <p className="text-gray-400 text-sm leading-relaxed">
               Moderní privátní fitness centrum s vrcholovým vybavením a maximálnym komfortom.
