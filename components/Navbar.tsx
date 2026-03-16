@@ -58,7 +58,7 @@ export default function Navbar() {
       {/* Center: Navigation Links */}
       <div className="hidden lg:flex gap-8">
         {navLinks.map((link) => (
-          <NavbarLinkButton key={link.label} sectionId={link.sectionId} label={link.label} onClick={() => handleSmoothScroll(link.sectionId)} />
+          <NavbarLinkButton key={link.label} label={link.label} onClick={() => handleSmoothScroll(link.sectionId)} />
         ))}
       </div>
 
