@@ -41,14 +41,14 @@ export default function Navbar() {
 
   return (
     <>
-    <nav className={`fixed top-0 left-0 right-0 w-full z-50 flex items-center justify-between px-6 md:px-10 py-7 transform transition-all duration-300 ease-in-out ${hasScrolled ? 'glass-dark' : 'bg-transparent'}`}>
+    <nav className={`fixed top-0 left-0 right-0 w-full z-40 flex items-center justify-between px-6 lg:px-10 py-7 transform transition-all duration-300 ease-in-out ${hasScrolled ? 'glass-dark' : 'bg-transparent'}`}>
       {/* Left: Logo */}
       <div className="h-8 flex items-center">
         <Image src="/logo_white.png" alt="Gymboo Logo" width={180} height={50} priority/>
       </div>
 
       {/* Center: Navigation Links */}
-      <div className="hidden md:flex gap-8">
+      <div className="hidden lg:flex gap-8">
         {navLinks.map((link) => (
           <NavbarLinkButton key={link.label} href={link.href} label={link.label} />
         ))}
@@ -56,7 +56,7 @@ export default function Navbar() {
 
       {/* Right: Menu Button (Mobile) */}
       <button
-        className="md:hidden p-2 text-white hover:text-primary transition-colors"
+        className="lg:hidden p-2 text-white hover:text-primary transition-colors"
         onClick={() => setIsOpen(!isOpen)}
         aria-label="Toggle menu"
       >
@@ -64,13 +64,14 @@ export default function Navbar() {
       </button>
 
       {/* Right: Rezervace Button (Desktop) */}
-      <button className="hidden md:inline-block btn-primary uppercase text-sm font-bold">
+      <button className="hidden lg:inline-block btn-primary uppercase text-sm font-bold">
         Rezervace
       </button>
     </nav>
 
     {/* Mobile Menu */}
-    <div className={`fixed top-0 right-0 h-screen w-full overflow-hidden glass md:hidden transform transition-transform duration-300 ease-in-out ${isOpen ? 'translate-x-0' : 'translate-x-full'}`}>
+    <div className={`fixed top-0 right-0 z-50 h-screen w-full overflow-hidden bg-stone-950/60 backdrop-blur-xl
+       lg:hidden transform transition-transform duration-300 ease-in-out ${isOpen ? 'translate-x-0' : 'translate-x-full'}`}>
         {/* Mobile Menu Header: Logo and Close Button */}
         <div className="flex items-center justify-between px-6 py-4 border-b border-white/10">
           <div className="h-8 flex items-center">
@@ -88,14 +89,14 @@ export default function Navbar() {
         {/* Mobile Menu Links */}
         <div className="flex flex-col gap-2 px-6 py-4">
           {navLinks.map((link) => (
-            <a key={link.label} href={link.href} className="group text-white hover:text-primary transition-all w-full h-12 flex items-center justify-center rounded-lg hover:bg-white/5">
+            <a key={link.label} href={link.href} className="group text-white hover:text-primary transition-all w-full h-12 flex items-center justify-center hover:bg-white/5">
               <span className="relative">
                 {link.label}
                 <div className="absolute bottom-0 left-0 right-0 h-0.5 w-full bg-white transform transition-all scale-x-0 group-hover:bg-primary group-hover:scale-x-100"></div>
               </span>
             </a>
           ))}
-          <button className="px-4 py-3 uppercase btn-primary rounded-xl font-bold w-full mt-2">
+          <button className="px-4 py-3 uppercase btn-primary font-bold w-full mt-2">
             Rezervace
           </button>
         </div>

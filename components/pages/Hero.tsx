@@ -13,7 +13,7 @@ export default function Hero() {
     <section className="min-h-screen px-10 py-12 md:py-0 relative">
         <div className="-z-10">
         <Image src="/background.png" alt="Hero Image" width={600} height={400}
-         className="absolute object-cover md:object-fill grayscale min-h-screen w-auto right-0 bottom-0 opacity-50 -z-6" priority />
+         className="absolute object-cover grayscale min-h-screen w-auto right-0 top-0 opacity-10 md:opacity-50 -z-6" priority />
          <div className="absolute inset-0 bg-gradient-to-b from-transparent to-stone-950 pointer-events-none -z-5" />
         </div>
 
@@ -33,9 +33,11 @@ export default function Hero() {
             </div>
         </div>
 
-        <button className="absolute bottom-10 left-1/2 mx-auto -translate-x-1/2 flex items-center justify-center w-12 h-12 rounded-full border-2 border-gray-500 hover:border-gray-600 transition-all duration-300 animate-bounce animation-delay-500">
-          <ArrowDown size={24} className="text-gray-600" />
-        </button>
+        <div className="absolute bottom-10 inset-x-0 flex justify-center">
+          <button className="flex items-center justify-center w-12 h-12 rounded-full border-2 border-gray-500 hover:border-gray-600 transition-all duration-300 animate-bounce animation-delay-500">
+            <ArrowDown size={24} className="text-gray-600" />
+          </button>
+        </div>
     </section>
   );
 }
