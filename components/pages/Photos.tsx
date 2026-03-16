@@ -40,7 +40,7 @@ export default function Photos() {
   };
 
   return (
-    <section className="px-4 sm:px-6 md:px-10 py-12 md:py-16 relative text-white">
+    <section id="photos" className="px-4 sm:px-6 md:px-10 py-12 md:py-16 relative text-white">
       {/* Mosaic Grid Layout */}
       <div className="max-w-7xl mx-auto" style={{
         display: 'grid',

@@ -24,7 +24,7 @@ export default function HowItWorks() {
   ];
 
   return (
-    <section className="min-h-screen  text-white px-4 py-16 md:py-24 flex flex-col justify-center relative bg-stone-950">
+    <section id="how-it-works" className="min-h-screen  text-white px-4 py-16 md:py-24 flex flex-col justify-center relative bg-stone-950">
         <Image src="/hory.png" alt="How it works" layout="fill" objectFit="cover" className="absolute inset-0 z-0 opacity-50" />
         <div className="absolute inset-0 bg-gradient-to-b from-transparent to-stone-950 pointer-events-none z-10" />
       <div className="flex flex-col items-center relative z-20">

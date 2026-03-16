@@ -26,7 +26,7 @@ const plans: PricingPlan[] = [
 
 export default function Pricing() {
   return (
-    <section className="px-6 md:px-10 py-12 md:py-16 relative text-white bg-stone-950">
+    <section id="pricing" className="px-6 md:px-10 py-12 md:py-16 relative text-white bg-stone-950">
       <div className="max-w-6xl mx-auto">
         {/* Header */}
         <div className="text-center mb-12">

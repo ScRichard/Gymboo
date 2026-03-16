@@ -27,7 +27,7 @@ export default function Equipment() {
   ];
 
   return (
-    <section className="px-6 md:px-10 py-6 md:py-12 relative text-white flex items-center">
+    <section id="equipment" className="px-6 md:px-10 py-6 md:py-12 relative text-white flex items-center">
       <div className="w-full grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-16 items-center z-20">
 
 
