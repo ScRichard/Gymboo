@@ -12,10 +12,10 @@ export default function Hero() {
          <div className="absolute inset-0 bg-gradient-to-b from-transparent to-stone-950 pointer-events-none -z-5" />
         </div>
 
-        <div className="hero__text min-h-screen flex flex-col justify-center max-w-3xl relative gap-5">
-            <div>
+        <div className="hero__text min-h-screen flex flex-col justify-center items-center mx-auto max-w-3xl relative gap-5 w-full">
+            <div className="text-center flex flex-col w-full">
                 <h1 className="text-4xl md:text-6xl font-bold mb-4 uppercase">Místo, kde začíná tvoje nejlepší forma</h1>
-            <h3 className="text-xl md:text-xl text-gray-400 mb-6"><strong className="text-gray-300 font-medium">Moderní privátní fitness centrum</strong>, které si rezervuješ jen pro sebe. Špičkové vybavení, maximální soukromí a prostor, kde se můžeš soustředit jen na svůj trénink.</h3>
+              <h3 className="text-xl md:text-xl text-gray-400 mb-6 text-center"><strong className="text-gray-300 font-medium">Moderní privátní fitness centrum</strong>, které si rezervuješ jen pro sebe. Špičkové vybavení, maximální soukromí a prostor, kde se můžeš soustředit jen na svůj trénink.</h3>
             </div>
         
             <div className="flex flex-col md:flex-row gap-4">
