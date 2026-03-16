@@ -18,6 +18,7 @@ const navLinks = [
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
   const [hasScrolled, setHasScrolled] = useState(false);
+  const [activeSection, setActiveSection] = useState<string | null>(null);
 
   const handleSmoothScroll = (sectionId: string) => {
     const element = document.getElementById(sectionId);
@@ -46,9 +47,23 @@ export default function Navbar() {
       } else {
         setHasScrolled(false);
       }
-    };
 
+      // Aktívna sekcia
+      let current: string | null = null;
+      for (const link of navLinks) {
+        const el = document.getElementById(link.sectionId);
+        if (el) {
+          const rect = el.getBoundingClientRect();
+          if (rect.top <= 120 && rect.bottom > 120) {
+            current = link.sectionId;
+            break;
+          }
+        }
+      }
+      setActiveSection(current);
+    };
     window.addEventListener('scroll', handleScroll);
+    handleScroll();
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
@@ -63,7 +78,12 @@ export default function Navbar() {
       {/* Center: Navigation Links */}
       <div className="hidden lg:flex gap-8">
         {navLinks.map((link) => (
-          <NavbarLinkButton key={link.label} label={link.label} onClick={() => handleSmoothScroll(link.sectionId)} />
+          <NavbarLinkButton
+            key={link.label}
+            label={link.label}
+            active={activeSection === link.sectionId}
+            onClick={() => handleSmoothScroll(link.sectionId)}
+          />
         ))}
       </div>
 
@@ -102,10 +122,14 @@ export default function Navbar() {
         {/* Mobile Menu Links */}
         <div className="flex flex-col gap-2 px-6 py-4">
           {navLinks.map((link) => (
-            <button key={link.label} onClick={() => handleSmoothScroll(link.sectionId)} className="group text-white hover:text-primary transition-all w-full h-12 flex items-center justify-center hover:bg-white/5 bg-transparent border-none cursor-pointer">
+            <button
+              key={link.label}
+              onClick={() => handleSmoothScroll(link.sectionId)}
+              className={`group transition-all w-full h-12 flex items-center justify-center hover:bg-white/5 bg-transparent border-none cursor-pointer ${activeSection === link.sectionId ? 'text-primary' : 'text-white'}`}
+            >
               <span className="relative">
                 {link.label}
-                <div className="absolute bottom-0 left-0 right-0 h-0.5 w-full bg-white transform transition-all scale-x-0 group-hover:bg-primary group-hover:scale-x-100"></div>
+                <div className={`absolute bottom-0 left-0 right-0 h-0.5 w-full bg-white transform transition-all ${activeSection === link.sectionId ? 'bg-primary scale-x-100' : 'scale-x-0 group-hover:bg-primary group-hover:scale-x-100'}`}></div>
               </span>
             </button>
           ))}
