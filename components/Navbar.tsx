@@ -1,7 +1,7 @@
 'use client';
 
 import Image from 'next/image';
-const prefix = typeof window !== 'undefined' && window.location.pathname.startsWith('/Gymboo') ? '/Gymboo' : '';
+const prefix = 'https://scrichard.github.io/Gymboo';
 import { useState, useEffect } from 'react';
 import { Menu, X } from 'lucide-react';
 import NavbarLinkButton from './NavbarLinkButton';
@@ -22,7 +22,11 @@ export default function Navbar() {
   const handleSmoothScroll = (sectionId: string) => {
     const element = document.getElementById(sectionId);
     if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
+      const navbar = document.querySelector('nav');
+      const navbarHeight = navbar ? navbar.getBoundingClientRect().height : 0;
+      const elementTop = element.getBoundingClientRect().top + window.scrollY;
+      const scrollTo = elementTop - navbarHeight / 2;
+      window.scrollTo({ top: scrollTo, behavior: 'smooth' });
       setIsOpen(false);
     }
   };

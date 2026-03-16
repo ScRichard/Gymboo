@@ -1,7 +1,7 @@
 'use client';
 
 import Image from 'next/image';
-const prefix = typeof window !== 'undefined' && window.location.pathname.startsWith('/Gymboo') ? '/Gymboo' : '';
+const prefix = 'https://scrichard.github.io/Gymboo';
 import { Mail, Phone, MapPin } from 'lucide-react';
 
 export default function Footer() {

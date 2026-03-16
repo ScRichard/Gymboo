@@ -1,6 +1,6 @@
 import { Calendar, Link, Sparkles } from 'lucide-react';
 import Image from 'next/image';
-const prefix = typeof window !== 'undefined' && window.location.pathname.startsWith('/Gymboo') ? '/Gymboo' : '';
+const prefix = 'https://scrichard.github.io/Gymboo';
 
 export default function HowItWorks() {
   const steps = [

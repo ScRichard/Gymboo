@@ -1,5 +1,5 @@
 import Image from 'next/image';
-const prefix = typeof window !== 'undefined' && window.location.pathname.startsWith('/Gymboo') ? '/Gymboo' : '';
+const prefix = 'https://scrichard.github.io/Gymboo';
 import { ArrowDown } from 'lucide-react';
 
 export default function Hero() {
