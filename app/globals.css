@@ -18,7 +18,7 @@
   }
 
   .glass-dark {
-    @apply bg-stone-900/40 backdrop-blur-md ;
+    @apply bg-stone-900/60 backdrop-blur-lg ;
   }
 
   .glass-dark-hover {
