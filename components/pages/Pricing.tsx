@@ -1,7 +1,5 @@
 'use client';
 
-import { Check } from 'lucide-react';
-
 interface PricingPlan {
   name: string;
   price: string | number;
