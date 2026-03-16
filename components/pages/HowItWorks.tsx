@@ -18,8 +18,8 @@ export default function HowItWorks() {
     },
     {
       number: 3,
-      title: "Odjezdj s respektem",
-      description: "Po sobě uklid, vrat pomůcky na místo a po-dvoj čas tréninku. Díky tomu má každý stejný komfort jako ty.",
+      title: "Odejdi s respektem",
+      description: "Po sobě uklid, vrat pomůcky na místo a dodrž svůj čas tréninku. Díky tomu má každý stejný komfort jako ty.",
       icon: Sparkles,
     },
   ];
