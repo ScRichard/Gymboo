@@ -1,10 +1,9 @@
 interface NavbarLinkButtonProps {
-  sectionId: string;
   label: string;
   onClick: () => void;
 }
 
-export default function NavbarLinkButton({ sectionId, label, onClick }: NavbarLinkButtonProps) {
+export default function NavbarLinkButton({ label, onClick }: NavbarLinkButtonProps) {
   return (
     <button onClick={onClick} className="group text-white/80 uppercase relative text-md font-semibold hover:text-primary transition-all duration-300 bg-transparent border-none cursor-pointer">
       <span>{label}</span>
