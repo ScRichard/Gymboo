@@ -13,7 +13,7 @@ export default function HowItWorks() {
     {
       number: 2,
       title: "Získej vstup a trénuj",
-      description: "Instruktce i přístupový kód ti dorazi emailem nebo sms. Pak už stačí přijít a vycvičit bez čekání.",
+      description: "Instruktce i přístupový kód ti dorazi emailem nebo sms. Pak už stačí přijít a cvičit bez čekání.",
       icon: Link,
     },
     {
