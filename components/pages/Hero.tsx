@@ -4,7 +4,7 @@ import { ArrowDown } from 'lucide-react';
 
 export default function Hero() {
   return (
-    <section className="min-h-screen px-20 py-12 md:py-0 relative">
+    <section className="min-h-screen px-20 py-12 md:py-0 justify-center">
         <div className="-z-10">
         <Image src={`${prefix}/background.png`} alt="Hero Image"
          width={1920} height={1080}
