@@ -3,8 +3,8 @@ import Navbar from '@/components/Navbar';
 import './globals.css';
 
 export const metadata: Metadata = {
-  title: 'Gymboo',
-  description: 'A minimal Next.js starter template',
+  title: 'Gimboo – soukromé fitness',
+  description: 'Gimboo – soukromé fitness bez čekání. Trénujte v klidu, s prémiovým vybavením a flexibilní rezervací až pro 3 osoby. Váš čas, váš výkon.',
 };
 
 export default function RootLayout({
