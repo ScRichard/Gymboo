@@ -9,29 +9,49 @@ type FAQItem = {
 };
 
 const faqItems: FAQItem[] = [
-  {
-    question: 'Ako dlho trvá jedna tréninková relácia?',
-    answer: 'Jedna tréninková relácia trvá zvyčajne 60 minút. Máte však možnosť prispôsobiť si dĺžku podľa vašich potrieb pri rezervácii.',
+   {
+    question: 'Jak funguje vstup do fitness centra?',
+    answer: 'Po registraci a rezervaci obdržíte e-mailem a SMS unikátní vstupní kód, kterým se dostanete do fitness centra ve vámi rezervovaném čase.',
   },
   {
-    question: 'Aké sú minimálne požiadavky na fitness nivo?',
-    answer: 'Naš fitness center je vhodný pre všetky fitness úrovne - od začiatočníkov až po pokročilých. Máme komplexné vybavenie na všetky druhy tréningov.',
+    question: 'Jak dlouho trvá jedna tréninková relace?',
+    answer: 'Standardní délka tréninku je 75 minut. Délku si můžete přizpůsobit při rezervaci dle svých potřeb je-li následující slot v rezervačním systému volný.',
   },
   {
-    question: 'Ponúkate aj trénerskú podporu?',
-    answer: 'Áno, na požiadanie poskytneme konzultáciu s profesionálnym trénerom. Kontaktujte nás pre viac informácií o dostupnosti.',
+    question: 'Je fitness centrum vhodné i pro začátečníky?',
+    answer: 'Ano, fitness centrum je vhodné pro začátečníky i pokročilé. Díky klidnému prostředí bez přeplněných prostor se můžete plně soustředit na svůj trénink.',
   },
   {
-    question: 'Čo sa stane, ak musím zrušiť rezerváciu?',
-    answer: 'Rezervácie je možné zrušiť do 24 hodín pred plánovaným časom bez poplatkov. Po tejto lehote si môžete stratiť kredit.',
+    question: 'Mohu přijít cvičit s někým dalším?',
+    answer: 'Ano, jeden vstup je možné využít až pro 3 osoby. Můžete přijít s partnerem, kamarádem nebo trenérem.',
   },
   {
-    question: 'Je potrebné si priniesť vlastné vybavenie?',
-    answer: 'Nie, máme kompletné vybavenie vrátane činiek, strojov a cvičovacích pomôcok. Máte možnosť priniesť si vlastný nástroj, ak chcete.',
+    question: 'Je potřeba si nosit vlastní vybavení?',
+    answer: 'Ne, fitness centrum je plně vybavené – k dispozici jsou činky, stroje, kardio i funkční pomůcky.',
   },
   {
-    question: 'Aké sú bezpečnostné opatrenia?',
-    answer: 'Dodržiavame najvyššie hygienické štandardy. Všetky zariadenia sú pravidelne dezinfikované a priestor je dobre vetraný.',
+    question: 'Mohu si rezervovat více tréninků dopředu?',
+    answer: 'Ano, rezervace lze vytvářet na více termínů dopředu podle dostupnosti v systému.',
+  },
+  {
+    question: 'Jak funguje zrušení rezervace?',
+    answer: 'Rezervaci lze zrušit v rezervačním systému do 24 hodin před začátkem. Po uplynutí této lhůty je vstup účtován.',
+  },
+  {
+    question: 'Mohu jako trenér/ka trénovat své klienty?',
+    answer: 'Ano, osobní trenéři mohou využívat prostor fitness centra, platí však maximální povolený počet osob.',
+  },
+  {
+    question: 'Jak je zajištěna bezpečnost a hygiena?',
+    answer: 'Dodržujeme vysoké hygienické standardy. Prostor je pravidelně dezinfikován, monitorován a dobře větraný.',
+  },
+  {
+    question: 'Je možné parkování?',
+    answer: 'Ano, parkování je možné v blízkosti fitness centra nebo přímo v areálu v dostupných hodinách.',
+  },
+  {
+    question: 'Mohu přijít s dítětem?',
+    answer: 'Ano, fitness centrum disponuje dětským koutkem. Za dítě však plně odpovídá doprovázející osoba.',
   },
 ];
 
