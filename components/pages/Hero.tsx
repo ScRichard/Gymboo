@@ -35,3 +35,25 @@ export default function Hero() {
             kde se můžeš soustředit jen na svůj trénink.
           </h3>
         </div>
+
+        {/* BUTTONS */}
+        <div className="flex flex-col md:flex-row gap-4 justify-center items-center">
+          <a href="#" className="btn-primary w-full md:w-40 flex items-center justify-center gap-2 uppercase text-sm font-bold">
+            Rezervace
+          </a>
+          <a href="#" className="btn-secondary w-full md:w-40 flex items-center justify-center gap-2 uppercase text-sm font-bold">
+            Zjistit více
+          </a>
+        </div>
+
+        {/* ICON */}
+        <div className="mt-6">
+          <button className="flex items-center justify-center w-12 h-12 rounded-full border-2 border-gray-500 hover:border-gray-600 transition-all duration-300 animate-bounce">
+            <ArrowDown size={24} className="text-gray-600" />
+          </button>
+        </div>
+
+      </div>
+    </section>
+  );
+}
